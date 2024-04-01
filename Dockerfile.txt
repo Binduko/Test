@@ -1,5 +1,5 @@
 FROM openjdk
-WORKDIR /app
+WORKDIR ${WORKSPACE}/var/jenkins_home/workspace/GH-Training/Bindu/docker_image
 COPY . /app
 RUN javac sample.java
 CMD ["java", "sample"]
